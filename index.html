@@ -8,18 +8,85 @@
       name="description"
       content="VocaLock uses Apple Screen Time to interrupt selected apps and turn scrolling into vocabulary practice."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="application-name" content="VocaLock" />
+    <meta name="apple-itunes-app" content="app-id=6759672555" />
+    <link rel="canonical" href="https://vocalock.com/" />
+    <meta property="og:site_name" content="VocaLock" />
+    <meta property="og:title" content="VocaLock | Learn a word before you scroll" />
     <meta
-      name="keywords"
-      content="vocabulary app, screen time, iphone, focus app, learning app"
+      property="og:description"
+      content="VocaLock uses Apple Screen Time to interrupt selected apps and turn scrolling into vocabulary practice."
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vocalock.com/" />
+    <meta property="og:image" content="https://vocalock.com/AppLogo.png" />
+    <meta property="og:image:alt" content="VocaLock app icon" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VocaLock | Learn a word before you scroll" />
+    <meta
+      name="twitter:description"
+      content="VocaLock uses Apple Screen Time to interrupt selected apps and turn scrolling into vocabulary practice."
+    />
+    <meta name="twitter:image" content="https://vocalock.com/AppLogo.png" />
     <link rel="icon" href="AppLogo.png" type="image/png" />
     <link rel="apple-touch-icon" href="AppLogo.png" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Structured data helps search engines connect the brand, site, and app. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://vocalock.com/#website",
+            "url": "https://vocalock.com/",
+            "name": "VocaLock",
+            "description": "VocaLock uses Apple Screen Time to interrupt selected apps and turn scrolling into vocabulary practice.",
+            "publisher": {
+              "@id": "https://vocalock.com/#organization"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://vocalock.com/#organization",
+            "name": "VocaLock",
+            "url": "https://vocalock.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://vocalock.com/AppLogo.png"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "writapp26@gmail.com"
+              }
+            ]
+          },
+          {
+            "@type": "MobileApplication",
+            "@id": "https://vocalock.com/#app",
+            "name": "VocaLock",
+            "url": "https://vocalock.com/",
+            "operatingSystem": "iOS",
+            "applicationCategory": "EducationalApplication",
+            "description": "VocaLock uses Apple Screen Time to interrupt selected apps and turn scrolling into vocabulary practice.",
+            "image": "https://vocalock.com/AppLogo.png",
+            "downloadUrl": "https://apps.apple.com/app/id6759672555",
+            "publisher": {
+              "@id": "https://vocalock.com/#organization"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <nav class="site-header">
       <div class="header-container">
-        <a href="#" class="brand" aria-label="VocaLock home">
+        <a href="/" class="brand" aria-label="VocaLock home">
           <img src="AppLogo.png" alt="VocaLock icon" class="brand-icon" />
           <span class="brand-text">VocaLock</span>
         </a>
@@ -98,9 +165,9 @@
 
       <footer>
         <nav class="footer-links" aria-label="Footer">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
+          <a href="/" aria-current="page">Home</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
           <a
             href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=writapp26@gmail.com"
             target="_blank"

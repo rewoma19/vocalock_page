@@ -414,7 +414,8 @@ a:focus-visible {
   }
 
   .logo {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
+    line-height: 1.06;
   }
 
   .hero-cta {
@@ -424,7 +425,7 @@ a:focus-visible {
   }
 
   .app-store-badge img {
-    height: 40px;
+    height: 44px;
   }
 
   .feature {
@@ -461,8 +462,8 @@ a:focus-visible {
   }
 
   .logo {
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-size: 2.15rem;
+    line-height: 1.08;
     margin-bottom: 0.1rem;
     white-space: normal;
   }
@@ -472,7 +473,7 @@ a:focus-visible {
   }
 
   .app-store-badge img {
-    height: 35px;
+    height: 39px;
   }
 
   .page-title {
