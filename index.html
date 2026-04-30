@@ -117,11 +117,21 @@
       <main class="phone-showcase">
         <div class="iphone">
           <div class="iphone-notch"></div>
-          <div class="iphone-screen">
+          <div class="iphone-screen" aria-label="VocaLock app screenshots preview">
             <img
-              id="app-demo"
-              src="IMG_0422 2.PNG"
-              alt="VocaLock app screenshot"
+              class="app-demo-frame is-active"
+              src="tiktok.PNG"
+              alt="Selected social app before VocaLock pauses scrolling"
+            />
+            <img
+              class="app-demo-frame"
+              src="shield.PNG"
+              alt="VocaLock lock screen prompting the user to learn before returning"
+            />
+            <img
+              class="app-demo-frame"
+              src="home.PNG"
+              alt="VocaLock home screen with a vocabulary card"
             />
           </div>
         </div>
@@ -186,5 +196,18 @@
         <p class="copyright">© 2026 VocaLock. All rights reserved.</p>
       </footer>
     </div>
+
+    <script>
+      const demoFrames = document.querySelectorAll(".app-demo-frame");
+      let activeDemoFrame = 0;
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && demoFrames.length > 1) {
+        window.setInterval(() => {
+          demoFrames[activeDemoFrame].classList.remove("is-active");
+          activeDemoFrame = (activeDemoFrame + 1) % demoFrames.length;
+          demoFrames[activeDemoFrame].classList.add("is-active");
+        }, 2400);
+      }
+    </script>
   </body>
 </html>

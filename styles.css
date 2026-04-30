@@ -162,7 +162,7 @@ body {
   position: relative;
 }
 
-#app-demo {
+.app-demo-frame {
   width: 101%;
   height: 101%;
   object-fit: cover;
@@ -170,8 +170,23 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.96);
   object-position: center;
+  transition:
+    opacity 0.45s ease-in-out,
+    transform 0.45s ease-in-out;
+}
+
+.app-demo-frame.is-active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-demo-frame {
+    transition: none;
+  }
 }
 
 .features {
